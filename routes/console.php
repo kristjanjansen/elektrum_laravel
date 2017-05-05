@@ -15,11 +15,6 @@ use App\Scaffold;
 use App\ScaffoldType;
 use App\WorkWorkerTime;
 
-Artisan::command('sarp:1', function () {
-    $admin = factory(App\WorkWorkerTime::class)->create();
-    dump($admin);
-});
-
 Artisan::command('sarp:generate', function () {
 
     $admin = factory(App\User::class)->create();
